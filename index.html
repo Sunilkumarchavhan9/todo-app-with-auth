@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegito's Todo App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Vegito's Todo App</h1>
+      <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <section class="add-todo">
+      <input type="text" id="new-todo" placeholder="Enter a new task...">
+      <button id="add-button"><i class="fas fa-plus"></i> Add Todo</button>
+    </section>
+
+    <section class="search-todo">
+      <input type="text" id="search-input" placeholder="Search todos...">
+      <button id="search-button"><i class="fas fa-search"></i> Search</button>
+      <button id="clear-search"><i class="fas fa-times"></i> Clear</button>
+    </section>
+
+    <section id="todos-container">
+      <h2>Your Todos</h2>
+      <ul id="todos-list"></ul>
+    </section>
+
+    <div class="progress-bar-container">
+      <label>Progress:</label>
+      <progress id="todo-progress" value="0" max="100"></progress>
+      <span id="progress-text">0%</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
